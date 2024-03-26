@@ -62,10 +62,14 @@ priority = "explicit"
 python = ">=3.11.0,<4"
 importlib_metadata = {version = ">=4", python = "~3.7"}
 ray = "*"
+numpy = "*"
+pydantic = "*"
 
 # Development dependencies that are at least pip installable.
 # If dependencies are only pip installable, set
 # them as {version = "<version number>", source = "pypi"}
+
+
 [tool.poetry.dev-dependencies]
 mds-dev = {version = ">=0.1.1", source ="feed_fund"}
 black = {version = "23.7.0", source = "pypi"}
