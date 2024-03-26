@@ -1,0 +1,27 @@
+{
+  "template": "https://dev.azure.com/dcimds/GRP%20-%20Fundamentals%20Modeling/_git/app-library-template",
+  "commit": "a3133dcc839e2b8dd4ad411a5bf20f8111d6002a",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "repo_name": "interop",
+      "module_name": "interop",
+      "short_description": "Interoperability library for developing scientific workflows",
+      "dev_name": "Andrew Abi-Mansour",
+      "dev_email": "andrew.abimansour@donaldson.com",
+      "org_name": "dcimds",
+      "proj_name": "GRP - Fundamentals Modeling",
+      "feed_name": "feed_fund",
+      "use_conda": false,
+      "prov_devops": true,
+      "_extensions": [
+        "jinja2_time.TimeExtension"
+      ],
+      "_template": "https://dev.azure.com/dcimds/GRP%20-%20Fundamentals%20Modeling/_git/app-library-template"
+    }
+  },
+  "directory": null,
+  "skip": [
+    ".git"
+  ]
+}
