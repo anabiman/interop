@@ -21,7 +21,7 @@ packages = [
 exclude = [
   "*/tests/"
 ]
-version = "0.1.0"
+version = "0.1.1"
 description = "Interoperability library for developing scientific workflows"
 authors = ["MDS Engineering"]
 classifiers = [
@@ -142,7 +142,7 @@ max-line-length = 99
 # Commitizen settings
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.0"
+version = "0.1.1"
 version_files = [
     "pyproject.toml:version"
 ]

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 (2024-03-26)
+
+### Fix
+
+- **class**: add missing deps
+
 ## 0.1.0 (2024-03-26)
 
 ### Feat
