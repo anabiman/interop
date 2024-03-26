@@ -1,0 +1,7 @@
+use_conda=False
+
+if $use_conda ; then
+    conda activate interop-dev
+else
+    source $(poetry env info --path)/bin/activate
+fi
