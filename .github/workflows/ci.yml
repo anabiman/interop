@@ -32,8 +32,8 @@ jobs:
         run: poetry install
       - name: Check for code validity
         run: |
-          black interop --check
-          isort interop -c
-          flake8 interop
+          poetry run black interop --check
+          poetry run isort interop -c
+          poetry run flake8 interop
       - name: Run tests
         run: poetry run pytest -v interop/tests
