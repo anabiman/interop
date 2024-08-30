@@ -30,10 +30,10 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install pkg with poetry
         run: poetry install
-      - name: Check for code format
-        run:
-          - black interop --check
-          - isort interop -c
-          - flake8 interop
+      - name: Check for code validity
+        run: |
+          black interop --check
+          isort interop -c
+          flake8 interop
       - name: Run tests
         run: poetry run pytest -v interop/tests
