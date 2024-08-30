@@ -48,9 +48,6 @@ platforms = [
 [tool.conda-lock.dependencies]
 
 [[tool.poetry.source]]
-name = "feed_fund"
-url = "https://pkgs.dev.azure.com/dcimds/_packaging/feed_fund/pypi/simple"
-priority = "explicit"
 
 # Runtime dependencies that are both pip and conda installable
 [tool.poetry.dependencies]
