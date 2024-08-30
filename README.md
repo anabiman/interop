@@ -6,11 +6,15 @@ Interoperability library for building interoperable and scalable components.
 
 Installation
 ============
-
+In order to install the `interop` library with pip, run:
 ```bash
-pip install interop
+pip install sci-interop
 ```
 
+For creating a [podman](https://podman.io) container image, run:
+```bash
+bash dev/create_image.sh
+```
 
 Contributing Guide
 ==================
