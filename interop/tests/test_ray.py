@@ -1,5 +1,6 @@
 import ipaddress
 import logging
+import os
 import random
 from sys import platform
 
@@ -55,6 +56,7 @@ def test_valid(ip, version):
     assert interop.utils.ray.validIPAddress(ip) == version
 
 
+@pytest.mark.skipif(os.name == "nt")
 def test_slurm_fail():
     with pytest.raises(KeyError):
         interop.utils.ray.create_cluster()
