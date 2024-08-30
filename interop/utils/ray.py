@@ -1,6 +1,10 @@
 import logging
 import os
-import resource
+
+if os.name != "nt":
+    import resource
+else:
+    resource = None
 import subprocess
 import tempfile
 from ipaddress import IPv4Address, ip_address
@@ -65,6 +69,8 @@ def pipe_process(cmd: list[str], stdin: Optional[bytes] = None) -> bytes:
 
 def set_rlimit() -> None:
     """Sets max number of open files to the hard limit."""
+    if resource is None:
+        raise NotImplementedError("resource module not available on windows")
     _, hard_lim = resource.getrlimit(resource.RLIMIT_NOFILE)
     resource.setrlimit(resource.RLIMIT_NOFILE, (hard_lim, hard_lim))
 
