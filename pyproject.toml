@@ -47,8 +47,6 @@ platforms = [
 # Runtime dependencies that are only conda installable
 [tool.conda-lock.dependencies]
 
-[[tool.poetry.source]]
-
 # Runtime dependencies that are both pip and conda installable
 [tool.poetry.dependencies]
 python = ">=3.11.0,<4"
