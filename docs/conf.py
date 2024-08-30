@@ -60,8 +60,8 @@ default_role = "any"
 
 # General information about the project.
 project = "interop"
-copyright = "Copyright 2023, Donaldson Company, Inc"
-author = "DCI Engineering"
+copyright = "Copyright 2024"
+author = "Andrew Abi-Mansour"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

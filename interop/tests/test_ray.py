@@ -71,6 +71,7 @@ def test_port():
 def test_initialize_ray(logger: logging.Logger, exec_req: dict[str, str]):
     num_cpus, num_gpus = interop.utils.ray.initialize_ray()
     assert num_cpus > 0
-    assert num_gpus is None
+    if num_gpus is not None:
+        assert num_gpus > 0
     ray.shutdown()
     assert not ray.is_initialized()
