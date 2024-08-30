@@ -16,4 +16,4 @@ Contributing Guide
 ==================
 
 For information on setting up interop for development and
-contributing changes, view `CONTRIBUTING.rst <CONTRIBUTING.rst>`_.
+contributing changes, see [CONTRIBUTING](https://github.com/anabiman/interop/blob/main/CONTRIBUTING.rst) file.
