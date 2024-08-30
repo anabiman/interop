@@ -1,14 +1,9 @@
 
-name: CI
+name: CD
 on:
-  push:
+  release:
     branches:
       - main
-      - dev
-  pull_request:
-    branches:
-      - main
-      - dev
 
 jobs:
   ci:
