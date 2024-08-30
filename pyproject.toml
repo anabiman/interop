@@ -16,7 +16,7 @@ packages = [
 exclude = [
   "*/tests/"
 ]
-version = "0.1.1"
+version = "0.1.2"
 description = "Interoperability library for developing scientific workflows"
 authors = ["Andrew Abi-Mansour"]
 classifiers = [
@@ -128,7 +128,7 @@ max-line-length = 99
 # Commitizen settings
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.1"
+version = "0.1.2"
 version_files = [
     "pyproject.toml:version"
 ]
