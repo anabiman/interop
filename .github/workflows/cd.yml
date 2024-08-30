@@ -25,5 +25,17 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install pkg with poetry
         run: poetry install
+      - name: Check for code validity
+        run: |
+          poetry run black interop --check
+          poetry run isort interop -c
+          poetry run flake8 interop
       - name: Run tests
         run: poetry run pytest -v interop/tests
+      - name: Generate distribution files
+        run: poetry build
+      - name: Publish Distribution to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository_url: https://test.pypi.org/legacy/
+          skip_existing: true
