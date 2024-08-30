@@ -56,7 +56,7 @@ def test_valid(ip, version):
     assert interop.utils.ray.validIPAddress(ip) == version
 
 
-@pytest.mark.skipif(os.name == "nt")
+@pytest.mark.skipif(os.name == "nt", reason="Slurm cluster creation not supported on windows")
 def test_slurm_fail():
     with pytest.raises(KeyError):
         interop.utils.ray.create_cluster()
